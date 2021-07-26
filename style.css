@@ -19,6 +19,14 @@
 body{
     background-color: var(--black);
 }
+button{
+    cursor: pointer;
+    min-width: 100px;
+    transition: 0.5s;
+}
+h1{
+    font-size: 18px;
+}
 /* SCROLL */
 body::-webkit-scrollbar {
     width: 0.25rem;
@@ -32,8 +40,7 @@ body::-webkit-scrollbar-thumb {
     background: #f81d1d;
 }
 /* BACKGROUND */
-.background{
-}
+
 .backgroundIMG{
     position: fixed;
     top: -20%; /* valeur à mettre en mediaquery */
@@ -59,13 +66,13 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 10px;
     background-color: #0E0E0E;
     font-family: var(--song);
     font-size: 21px;
     z-index: 99;
 }
 .navbar-nav{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,17 +80,71 @@ body::-webkit-scrollbar-thumb {
 .nav-item{
     list-style: none;
 }
-.nav-item:hover a{
-    color: #f81d1d;
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn,.nav-item .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
+    background-color: red;
     transition: 0.5s;
 }
-.nav-link{
-    color: white;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: var(--black);
+    padding: 12px 16px;
     text-decoration: none;
-    margin: 15px;
-    transition: 0.5s;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content div{
+    margin-top: 5px;
+}
+.dropdown-content .xp a, .dropdown-content .gathering a, .dropdown-content .pvp a{
+    margin: -5px 0;
+}
+h1{
+    margin: 10px 5px;
 }
 
-.test{
-    height: 200vh;
+/* TEST */
+
+.test1, .test2{
+    display: flex;
+    justify-content: center;
+}
+.test1{
+    margin-top: 50px;
+}
+.whiteboard{
+    display: none;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    background-color: white;
 }
