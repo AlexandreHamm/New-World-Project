@@ -1,0 +1,89 @@
+/* FONTS */
+@font-face {
+    font-family: "please_write_me_a_song";
+    src: url("./src/fonts/Please\ write\ me\ a\ song.ttf") format("truetype");
+}
+/* VARIABLES */
+:root{
+    font-size: 16px;
+    --song: "please_write_me_a_song", Arial, sans-serif;
+    --black: #222222;
+}
+/* RESET */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* GENERAL */
+body{
+    background-color: var(--black);
+}
+/* SCROLL */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #f81d1d;
+}
+/* BACKGROUND */
+.background{
+}
+.backgroundIMG{
+    position: fixed;
+    top: -20%; /* valeur à mettre en mediaquery */
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: -3;
+    opacity: 10%;
+    width: 100vw;
+}
+.backgroundLogo{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: -2;
+    position: fixed;
+    opacity: 30%;
+}
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 10px;
+    background-color: #0E0E0E;
+    font-family: var(--song);
+    font-size: 21px;
+    z-index: 99;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item:hover a{
+    color: #f81d1d;
+    transition: 0.5s;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    transition: 0.5s;
+}
+
+.test{
+    height: 200vh;
+}
