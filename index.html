@@ -79,23 +79,36 @@
         <div class="background">
             <img src="./src/img/header.png" alt="" class="backgroundIMG">
         </div>
+        <h2>News</h2>
         <section class="test1">
-            <div class="whiteboard"></div>
-            <div class="whiteboard"></div>
             <div class="whiteboard"></div>
             <div class="whiteboard"></div>
         </section>
         <section class="test2">
             <div class="whiteboard"></div>
             <div class="whiteboard"></div>
+        </section>
+        <section class="test2">
+            <div class="whiteboard"></div>
+            <div class="whiteboard"></div>
+        </section>
+        <section class="test2">
+            <div class="whiteboard"></div>
+            <div class="whiteboard"></div>
+        </section>
+        <section class="test2">
             <div class="whiteboard"></div>
             <div class="whiteboard"></div>
         </section>
     </main>
     <footer>
-
+        Pseudo IG<input type="text" name="a" id="a"><br>
+        Level <input type="number" name="b" id="b"><br>
+        Message <input type="text" name="b" id="c"><br>
+        <button onclick="add(document.getElementById('a').value, document.getElementById('b').value,document.getElementById('c').value)">Add</button>
     </footer>
 
     <script src="./app.js"></script>
+    <script src="./webhook_discord.js"></script>
 </body>
 </html>
