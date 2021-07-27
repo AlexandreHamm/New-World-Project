@@ -170,6 +170,14 @@ input::placeholder, textarea::placeholder{
 input[type=text], input[type=number], textarea[type=text]{
     padding-left: 6px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 textarea[type=text]{
     padding-top: 5px;
 }
