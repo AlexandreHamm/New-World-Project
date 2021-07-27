@@ -21,7 +21,6 @@ body{
 }
 button{
     cursor: pointer;
-    min-width: 100px;
     transition: 0.5s;
 }
 h1{
@@ -37,13 +36,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #f81d1d;
+    background: #ffffff;
 }
 /* BACKGROUND */
 
 .backgroundIMG{
     position: fixed;
-    top: -20%; /* valeur à mettre en mediaquery */
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
@@ -64,12 +62,13 @@ body::-webkit-scrollbar-thumb {
 /* NAVBAR */
 .navbar{
     position: fixed;
-    top: 0;
     width: 100vw;
     background-color: #0E0E0E;
     font-family: var(--song);
     font-size: 21px;
     z-index: 99;
+    border-bottom: 1px solid red;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .navbar-nav{
     position: relative;
@@ -86,8 +85,8 @@ body::-webkit-scrollbar-thumb {
 }
 .dropdown .dropbtn,.nav-item .dropbtn {
     font-size: 20px;
-    border: none;
     outline: none;
+    border: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
@@ -107,6 +106,9 @@ body::-webkit-scrollbar-thumb {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+}
+.guide{
+    padding-bottom: 5px;
 }
 .dropdown-content a {
     float: none;
@@ -129,7 +131,7 @@ body::-webkit-scrollbar-thumb {
     margin: -5px 0;
 }
 h1{
-    margin: 10px 5px;
+    margin: 10px 10px;
 }
 
 /* TEST */
@@ -142,9 +144,66 @@ h1{
     margin-top: 50px;
 }
 .whiteboard{
-    display: none;
+    display: block;
     width: 400px;
     height: 600px;
     margin: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1000px) {
+    .backgroundIMG{
+        top: 0;
+    }
+    .mobile{
+        max-width: 50px;
+        max-height: 50px;
+        display: block;
+        filter: grayscale(60%);
+    }
+    .desktop{
+        display: none;
+    }
+    .navbar{
+        bottom: 0;
+    }
+    button{
+        min-width: 80px;
+    }
+    .nav-item{
+        margin: auto 1vw;
+    }
+    .dropdown-content{
+        top: -28.2rem;
+    }
+    .guide{
+        top: -31.8rem;
+    }
+
+
+    .test1, .test2{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .backgroundIMG{
+        top: -20%;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .navbar{
+        top: 0;
+    }
+    button{
+        min-width: 100px;
+    }
 }
