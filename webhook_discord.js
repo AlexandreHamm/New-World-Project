@@ -1,8 +1,10 @@
 let msg;
+let form = document.querySelector('.formulaire');
 
 function add(a,b,c){
-    msg = a + '\n' + b + '\n' + c
+    msg = '`IG Name: ' + a + '\n\n' + 'Level: ' + b + '\n\n' + 'Message: ' + c + '`'
     sendMessage();
+    form.style.display = 'none'
 }
 
 function sendMessage() {

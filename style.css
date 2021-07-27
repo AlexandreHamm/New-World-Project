@@ -25,6 +25,16 @@ button{
 }
 h1{
     font-size: 18px;
+    margin: 10px 10px;
+}
+h2{
+    display: none;
+    font-size: 40px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    text-align: center;
+    color: white;
 }
 /* SCROLL */
 body::-webkit-scrollbar {
@@ -130,16 +140,46 @@ body::-webkit-scrollbar-thumb {
 .dropdown-content .xp a, .dropdown-content .gathering a, .dropdown-content .pvp a{
     margin: -5px 0;
 }
-h1{
-    margin: 10px 10px;
-}
-h2{
-    font-size: 40px;
-    padding-bottom: 10px;
-    margin-top: 100px;
-    margin-bottom: -20px;
-    text-align: center;
+
+/* CONTACT FORM */
+form{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    width: 20rem;
     color: white;
+    transform: translate(-50%);
+}
+input, textarea{
+    height: 2rem;
+    width: 100%;
+    background-color: var(--black);
+    color: white;
+    border: 2px solid red;
+    margin-bottom: 1rem;
+}
+textarea{
+    height: 200px;
+}
+input::placeholder, textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    opacity: 50%;
+}
+input[type=text], input[type=number], textarea[type=text]{
+    padding-left: 6px;
+}
+textarea[type=text]{
+    padding-top: 5px;
+}
+.formBtn{
+    height: 2rem;
+    margin-left: 50%;
+    background-color: var(--black);
+    color: white;
+    border: 2px solid red;
+    transform: translate(-50%);
 }
 
 /* TEST */
@@ -152,7 +192,7 @@ h2{
     margin-top: 50px;
 }
 .whiteboard{
-    display: block;
+    display: none;
     cursor: pointer;
     width: 400px;
     height: 500px;
@@ -221,9 +261,4 @@ h2{
     button{
         min-width: 100px;
     }
-}
-
-
-footer{
-    color: white;
 }

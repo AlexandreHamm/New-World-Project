@@ -100,13 +100,17 @@
             <div class="whiteboard"></div>
             <div class="whiteboard"></div>
         </section>
+
+        <section class="formulaire">
+            <form>
+                <input type="text" name="a" id="a" placeholder="IG Name"><br>
+                <input type="number" name="b" id="b" placeholder="Level"><br>
+                <textarea type="text" name="c" id="c" placeholder="Message"></textarea><br>
+                <button class="formBtn" type="button" onclick="add(document.getElementById('a').value, document.getElementById('b').value,document.getElementById('c').value)">Send</button>
+            </form>
+        </section>
     </main>
-    <footer>
-        Pseudo IG<input type="text" name="a" id="a"><br>
-        Level <input type="number" name="b" id="b"><br>
-        Message <input type="text" name="b" id="c"><br>
-        <button onclick="add(document.getElementById('a').value, document.getElementById('b').value,document.getElementById('c').value)">Add</button>
-    </footer>
+    
 
     <script src="./app.js"></script>
     <script src="./webhook_discord.js"></script>
