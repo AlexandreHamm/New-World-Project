@@ -55,7 +55,7 @@ $(".formBtn").click(function(e) {
 
             $.ajax({
                 type: "POST",
-                url: "https://discord.com/api/webhooks/869547241860395058/vV7hV497JqhnhpUkPV4TmcCtkuLJrraA5VfV_KfQasxMKmQdwh5rOzzA0-rIAdEFfM5-",
+                url: "https://discord.com/api/webhooks/869951564910059610/VsJIQKuFu9NsiOOZr-Jnubl3a4iFVTrIWPsaV2tPrpeZt4Hz17U_526kUcaK6ItJjzXm",
                 headers: {
                     'Content-Type': 'application/json',
                 },
@@ -64,7 +64,7 @@ $(".formBtn").click(function(e) {
                     username: 'Captain Thorpe',
                     // the avatar to be displayed
                     avatar_url:
-                      'https://i.imgur.com/rQ7gLzY.png',
+                      'https://i.imgur.com/zPqXIWH.png',
                     // contents of the message to be sent
                     embeds: [
                         {
@@ -73,7 +73,7 @@ $(".formBtn").click(function(e) {
                             // author
                             // - icon next to text at top (text is a link)
                             author: {
-                                name: 'KNINE',
+                                name: 'K9',
                                 url: 'https://alexandreh.promo-90.codeur.online/New-World-Project/',
                                 icon_url: 'https://i.imgur.com/EXdVGUh.png',
                             },
@@ -139,7 +139,7 @@ $(".formBtn").click(function(e) {
                 });
         }
         else{
-            console.log('theres an empty input');
+            alert('Veuillez renseigner tous les champs.');
             return false
         }
     });    
