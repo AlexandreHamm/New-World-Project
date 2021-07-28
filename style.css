@@ -229,6 +229,7 @@ textarea[type=text]{
 }
 .hideForm{
     opacity: 0;
+    pointer-events: none;
 }
 
 /* TEST */
