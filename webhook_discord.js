@@ -39,7 +39,7 @@ let a,
 $(document).ready(function() {
     $('input').prop('required', 'required');}); 
 
-$(".formBtn").click(function(e) {
+$(".formBtn").click(function(e) { 
 
     e.preventDefault(); // avoid to execute the actual submit of the form.
 
@@ -50,6 +50,8 @@ $(".formBtn").click(function(e) {
             a = document.getElementById('a').value,
             b = document.getElementById('b').value,
             c = document.getElementById('c').value;
+
+            $("button").prop('disabled', true); 
 
             $.ajax({
                 type: "POST",
