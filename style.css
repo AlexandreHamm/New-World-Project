@@ -70,14 +70,28 @@ body::-webkit-scrollbar-thumb {
     opacity: 30%;
 }
 /* NAVBAR */
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 63px;
+}
+.logotxt{
+    position: absolute;
+    top: 30%;
+    left: 4rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px var(--black);
+}
 .navbar{
     position: fixed;
     width: 100vw;
-    background-color: #0E0E0E;
+    background-color: #181819;
     font-family: var(--song);
     font-size: 21px;
     z-index: 99;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #f89e6b;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .navbar-nav{
@@ -104,7 +118,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0; /* Important for vertical align on mobile phones */
 }
 .dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
-    background-color: red;
+    background-color: #f89e6b;
     transition: 0.5s;
 }
 .dropdown-content {
@@ -149,13 +163,14 @@ form{
     width: 20rem;
     color: white;
     transform: translate(-50%);
+    transition: 0.5s;
 }
 input, textarea{
     height: 2rem;
     width: 100%;
     background-color: var(--black);
     color: white;
-    border: 2px solid red;
+    border: 2px solid #f89e6b;
     margin-bottom: 1rem;
 }
 textarea{
@@ -186,8 +201,34 @@ textarea[type=text]{
     margin-left: 50%;
     background-color: var(--black);
     color: white;
-    border: 2px solid red;
+    border: 2px solid #f89e6b;
     transform: translate(-50%);
+}
+
+.msgsent{
+    pointer-events: none;
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    width: 30rem;
+    color: white;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 35px;
+    transition: 3s;
+    opacity: 0;
+    padding: 10px 20px;
+    border: 3px solid #f89e6b;
+    background-color: var(--black);
+}
+.msgsent p{
+    display: block;
+}
+.ok{
+    opacity: 100%;
+}
+.hideForm{
+    opacity: 0;
 }
 
 /* TEST */
@@ -209,7 +250,7 @@ textarea[type=text]{
     box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     .backgroundIMG{
         top: 0;
     }
@@ -243,6 +284,26 @@ textarea[type=text]{
         background-color: var(--black);
         margin-top: 0;
     }
+    .logo, .logotxt{
+        position: fixed;
+        pointer-events: none;
+    }
+    .logo{
+        top: .3rem;
+        left: 0;
+    }
+    .logotxt{
+        top: 1.5rem;
+        left: 4rem;
+    }
+    form{
+        top: 7rem;
+    }
+    .msgsent{
+        top: 8rem;
+        max-width: 90vw;
+        margin: auto .5vw;
+    }
 
 
     .test1, .test2{
@@ -253,7 +314,7 @@ textarea[type=text]{
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
     .backgroundIMG{
         top: -20%;
     }

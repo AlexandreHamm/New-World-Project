@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Company site for War Dogs on Amazon's game 'New World'">
     <title>Project K. N. New World</title>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -11,14 +12,18 @@
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <button class="dropbtn">
+                <img src="./src/svg/logotest.svg" alt="" class="logo">
+                <span class="logotxt">war dogs</span>
+            </li>
+            <li class="nav-item">
+                <button class="dropbtn" label="Home">
                     <img src="./src/svg/home.svg" alt="" class="mobile">
                     <span class="desktop">Home</span>
                 </button>
             </li>
             <li class="nav-item">
                 <div class="dropdown">
-                    <button class="dropbtn">
+                    <button class="dropbtn" label="Guides">
                         <img src="./src/svg/guides.svg" alt="" class="mobile">
                         <span class="desktop">Guides</span>
                     </button>
@@ -48,7 +53,7 @@
             </li>
             <li class="nav-item">
                 <div class="dropdown">
-                    <button class="dropbtn">
+                    <button class="dropbtn" label="Builds">
                         <img src="./src/svg/builds.svg" alt="" class="mobile">
                         <span class="desktop">Builds</span>
                     </button>
@@ -68,7 +73,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <button class="dropbtn">
+                <button class="dropbtn" label="Contact">
                     <img src="./src/svg/contact.svg" alt="" class="mobile">
                     <span class="desktop">Contact</span>
                 </button>
@@ -102,16 +107,22 @@
         </section>
 
         <section class="formulaire">
-            <form>
-                <input type="text" name="a" id="a" placeholder="IG Name"><br>
-                <input type="number" name="b" id="b" placeholder="Level" maxlength="2" pattern="/\b([0-9]|60)\b /"><br>
-                <textarea type="text" name="c" id="c" placeholder="Message"></textarea><br>
-                <button class="formBtn" type="button" onclick="add(document.getElementById('a').value, document.getElementById('b').value,document.getElementById('c').value)">Send</button>
+            <form class="formcontent">
+                <input type="text" name="a" id="a" placeholder="IG Name" class='info'><br>
+                <input type="number" name="b" id="b" placeholder="Level" maxlength="2" class='info'><br>
+                <textarea type="text" name="c" id="c" placeholder="What is the reason of you contacting us ?" class='info'></textarea><br>
+                <button class="formBtn" type="button" >Send</button>
             </form>
+            <div class="msgsent">
+                Informations have been sent <br>
+                successfully. <br>
+                Officers will contact you <br>
+                as soon as possible.
+            </div>
         </section>
     </main>
     
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
     <script src="./app.js"></script>
     <script src="./webhook_discord.js"></script>
 </body>
