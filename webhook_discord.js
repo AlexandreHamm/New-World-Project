@@ -35,20 +35,11 @@ let a,
 
 // this is the id of the form
 
-$(document).ready(function() {
-    $('input').prop('required', 'required');}); 
-
-$("#b").keyup(function() {
-    $("#b").val(this.value.match(/[0-9]*/));
-});
-
 $(".formBtn").click(function(e) { 
 
     e.preventDefault(); // avoid to execute the actual submit of the form.
 
     let form = $(".formcontent");
-
-    form[0].checkValidity();
 
     $('form').each(function() {
         if ($('.info').val() != '') {
@@ -56,7 +47,7 @@ $(".formBtn").click(function(e) {
             b = document.getElementById('b').value,
             c = document.getElementById('c').value;
 
-            $("button").prop('disabled', true); 
+            $(".formBtn").prop('disabled', true); 
 
             $.ajax({
                 type: "POST",

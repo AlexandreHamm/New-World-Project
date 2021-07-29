@@ -18,8 +18,10 @@
             <li class="nav-item">
                 <button class="dropbtn" label="Home" onclick='home()'>
                     <img src="./src/svg/home.svg" alt="" class="mobile">
-                    <span class="desktop en">Home</span>
-                    <span class="desktop fr">Accueil</span>
+                    <div class='desktop'>
+                        <span class="en">Home</span>
+                        <span class="fr">Accueil</span>
+                    </div>
                 </button>
             </li>
             <li class="nav-item">
@@ -113,6 +115,10 @@
                     <img src="./src/svg/contact.svg" alt="" class="mobile">
                     <span class="desktop">Contact</span>
                 </button>
+            </li>
+            <li class="flags">
+                <button class="flag frLang"><img src="./src/svg/english.svg" alt="Changer la langue du site vers le français" onclick="en()"></button>
+                <button class="flag enLang"><img src="./src/svg/french.svg" alt="Change website language to english" onclick="fr()"></button>
             </li>
         </ul>
     </nav>
