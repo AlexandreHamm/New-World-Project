@@ -275,6 +275,11 @@ textarea[type=text]{
         display: block;
         filter: grayscale(60%);
     }
+    .dropBtn img{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
     .desktop{
         display: none !important;
     }
@@ -283,6 +288,9 @@ textarea[type=text]{
     }
     button{
         min-width: 80px;
+    }
+    .dropBtn{
+        height: 77.98px;
     }
     .nav-item{
         margin: auto 1vw;
