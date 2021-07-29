@@ -41,10 +41,10 @@
 
 // 
 
-	define('VARIABLE_2',"Hachette");
-	define('VARIABLE_2',"Hachette");
-	define('VARIABLE_2',"Hachette");
-	define('VARIABLE_2',"Hachette");
-	define('VARIABLE_2',"Hachette");
-	define('VARIABLE_2',"Hachette");
+	// define('VARIABLE_2',"Hachette");
+	// define('VARIABLE_2',"Hachette");
+	// define('VARIABLE_2',"Hachette");
+	// define('VARIABLE_2',"Hachette");
+	// define('VARIABLE_2',"Hachette");
+	// define('VARIABLE_2',"Hachette");
 ?> 
