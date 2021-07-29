@@ -289,8 +289,8 @@ textarea[type=text]{
     button{
         min-width: 80px;
     }
-    .dropBtn{
-        height: 77.98px;
+    .dropbtn{
+        max-height: 76px;
     }
     .nav-item{
         margin: auto 1vw;
