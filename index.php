@@ -1,3 +1,27 @@
+<?php // EN TETE DE FICHIER
+
+	  // http://mon_site.com/index.php?lang=fr
+
+ 	 if ($_GET['lang']=='fr') {           // si la langue est 'fr' (français) on inclut le fichier fr-lang.php
+  	 include('french.php');
+  	 } 
+   	 
+   	 else if ($_GET['lang']=='en') {      // si la langue est 'en' (anglais) on inclut le fichier en-lang.php
+   	 include('english.php');
+   	 }
+   	 
+  	 else {                       // si aucune langue n'est déclarée on inclut le fichier fr-lang.php par défaut
+  	 include('french.php');
+   	 }
+   	 
+	 // Dans le HTML 
+	 /*EX : 
+	 
+	 <?php echo VARIABLE; ?> 
+	 
+	 */
+	 
+   	 ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +42,9 @@
             <li class="nav-item">
                 <button class="dropbtn" label="Home" onclick='home()'>
                     <img src="./src/svg/home.svg" alt="" class="mobile">
-                    <div class='desktop'>
+                    <div class=''>
                         <span class="en">Home</span>
-                        <span class="fr">Accueil</span>
+                        <span class="desktop"><?php echo VARIABLE; ?></span>
                     </div>
                 </button>
             </li>
