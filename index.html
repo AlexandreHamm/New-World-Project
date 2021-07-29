@@ -144,21 +144,21 @@
 
         <section class="formulaire">
             <form class="formcontent">
-                <input type="text" name="a" id="a" placeholder="IG Name" class='info'><br>
-                <input type="number" name="b" id="b" placeholder="Level" maxlength="2" class='info'><br>
-                <textarea type="text" name="c" id="c" placeholder="What is the reason of you contacting us ?" class='info'></textarea><br>
+                <input type="text" name="a" id="a" placeholder="Nom du personnage" class='info'><br>
+                <input type="text" maxlength="2" pattern="^([1-9]|[1-5][0-9]|60|all)$" name="b" id="b" placeholder="Niveau du personnage" class='info'><br>
+                <textarea type="text" name="c" id="c" placeholder="Pour quelle raison nous contactez-vous ?" class='info'></textarea><br>
                 <button class="formBtn" type="button" >Send</button>
             </form>
-            <div class="msgsent en">
+            <div class="confirmation en">
                 Informations have been sent <br>
                 successfully. <br>
                 Officers will contact you <br>
                 as soon as possible.
             </div>
-            <div class="msgsent fr">
+            <div class="confirmation fr">
                 Informations envoyées avec <br>
                 succès. <br>
-                Nos officers vous contacterons <br>
+                Nos officiers vous contacterons <br>
                 dans les plus brefs délais.
             </div>
         </section>

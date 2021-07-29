@@ -1,5 +1,4 @@
 let form = document.querySelector('form');
-let msgSent = document.querySelector('.msgsent');
 let a,
     b,
     c;
@@ -39,11 +38,17 @@ let a,
 $(document).ready(function() {
     $('input').prop('required', 'required');}); 
 
+$("#b").keyup(function() {
+    $("#b").val(this.value.match(/[0-9]*/));
+});
+
 $(".formBtn").click(function(e) { 
 
     e.preventDefault(); // avoid to execute the actual submit of the form.
 
     let form = $(".formcontent");
+
+    form[0].checkValidity();
 
     $('form').each(function() {
         if ($('.info').val() != '') {
@@ -131,7 +136,7 @@ $(".formBtn").click(function(e) {
                 success: function(data)
                 {
                 $(".formcontent").addClass('hideForm');
-                $(".msgsent").addClass('ok');
+                $(".confirmation").css('opacity','100%');
                 },
                 error: function(){
                     // COMME SUCCESS, MAIS MESSAGE D'ERREUR

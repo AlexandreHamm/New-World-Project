@@ -3,10 +3,15 @@
     font-family: "please_write_me_a_song";
     src: url("./src/fonts/Please\ write\ me\ a\ song.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Louis George Cafe";
+    src: url("./src/fonts/Louis\ George\ Cafe.ttf") format("truetype");
+}
 /* VARIABLES */
 :root{
     font-size: 16px;
     --song: "please_write_me_a_song", Arial, sans-serif;
+    --cafe: "Louis George Cafe", Arial, sans-serif;
     --black: #222222;
 }
 /* RESET */
@@ -218,8 +223,8 @@ textarea[type=text]{
     transform: translate(-50%);
 }
 
-.msgsent{
-    font-family: Arial, Helvetica, sans-serif;
+.confirmation{
+    font-family: var(--cafe);
     pointer-events: none;
     position: absolute;
     top: 7rem;
@@ -235,11 +240,8 @@ textarea[type=text]{
     border: 3px solid #f89e6b;
     background-color: var(--black);
 }
-.msgsent p{
+.confirmation p{
     display: block;
-}
-.ok{
-    opacity: 100%;
 }
 .hideForm{
     opacity: 0;
@@ -322,7 +324,7 @@ textarea[type=text]{
     form{
         top: 7rem;
     }
-    .msgsent{
+    .confirmation{
         top: 8rem;
         max-width: 90vw;
         margin: auto .5vw;
