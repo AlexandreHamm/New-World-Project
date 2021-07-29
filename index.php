@@ -44,7 +44,7 @@
                     <img src="./src/svg/home.svg" alt="" class="mobile">
                     <div class=''>
                         <span class="en">Home</span>
-                        <span class="desktop"><?php echo VARIABLE; ?></span>
+                        <span class="desktop"><?php echo home; ?></span>
                     </div>
                 </button>
             </li>
