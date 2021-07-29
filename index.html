@@ -16,9 +16,10 @@
                 <span class="logotxt">war dogs</span>
             </li>
             <li class="nav-item">
-                <button class="dropbtn" label="Home">
+                <button class="dropbtn" label="Home" onclick='home()'>
                     <img src="./src/svg/home.svg" alt="" class="mobile">
-                    <span class="desktop">Home</span>
+                    <span class="desktop en">Home</span>
+                    <span class="desktop fr">Accueil</span>
                 </button>
             </li>
             <li class="nav-item">
@@ -28,13 +29,19 @@
                         <span class="desktop">Guides</span>
                     </button>
                     <div class="dropdown-content guide">
-                        <div class="xp">
+                        <div class="xp en">
                             <h1>Progressing</h1>
                             <a href="#">Character EXP</a>
                             <a href="#">Weapons EXP</a>
                             <a href="#">Invasions</a>
                         </div>
-                        <div class="gathering">
+                        <div class="xp fr">
+                            <h1>Progression</h1>
+                            <a href="#">Exp du Personnage</a>
+                            <a href="#">Exp des armes</a>
+                            <a href="#">Invasions</a>
+                        </div>
+                        <div class="gathering en">
                             <h1>Gathering</h1>
                             <a href="#">Skinning</a>
                             <a href="#">Mining</a>
@@ -42,11 +49,25 @@
                             <a href="#">Harvesting</a>
                             <a href="#">Fishing</a>
                         </div>
-                        <div class="pvp">
+                        <div class="gathering fr">
+                            <h1>Exploitation</h1>
+                            <a href="#">Dépeçage</a>
+                            <a href="#">Mineur</a>
+                            <a href="#">Bûcheron</a>
+                            <a href="#">Récolte</a>
+                            <a href="#">Pêcheur</a>
+                        </div>
+                        <div class="pvp en">
                             <h1>PvP</h1>
                             <a href="#">Wars</a>
                             <a href="#">Fortresses</a>
                             <a href="#">Cities</a>
+                        </div>
+                        <div class="pvp fr">
+                            <h1>PvP</h1>
+                            <a href="#">Guerres</a>
+                            <a href="#">Forteresses</a>
+                            <a href="#">Contrôle de villes</a>
                         </div>
                     </div>
                 </div>
@@ -58,22 +79,37 @@
                         <span class="desktop">Builds</span>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Sword & Shield</a>
-                        <a href="#">Hatchet</a>
-                        <a href="#">Rapier</a>
-                        <a href="#">Lance</a>
-                        <a href="#">Hammer</a>
-                        <a href="#">Greataxe</a>
-                        <a href="#">Bow</a>
-                        <a href="#">Musket</a>
-                        <a href="#">Fire Staff</a>
-                        <a href="#">Ice Gauntlet</a>
-                        <a href="#">Life Staff</a>
+                        <div class="en">
+                            <a href="#">Sword & Shield</a>
+                            <a href="#">Hatchet</a>
+                            <a href="#">Rapier</a>
+                            <a href="#">Lance</a>
+                            <a href="#">Hammer</a>
+                            <a href="#">Greataxe</a>
+                            <a href="#">Bow</a>
+                            <a href="#">Musket</a>
+                            <a href="#">Fire Staff</a>
+                            <a href="#">Ice Gauntlet</a>
+                            <a href="#">Life Staff</a>
+                        </div>
+                        <div class="fr">
+                            <a href="#">Epée et bouclier</a>
+                            <a href="#">Hachette</a>
+                            <a href="#">Rapière</a>
+                            <a href="#">Lance</a>
+                            <a href="#">Marteau</a>
+                            <a href="#">Hache 2 mains</a>
+                            <a href="#">Arc</a>
+                            <a href="#">Fusil</a>
+                            <a href="#">Bâton de feu</a>
+                            <a href="#">Gantelet de froid</a>
+                            <a href="#">Bâton de vie</a>
+                        </div>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
-                <button class="dropbtn" label="Contact">
+                <button class="dropbtn" label="Contact" onclick="contact()">
                     <img src="./src/svg/contact.svg" alt="" class="mobile">
                     <span class="desktop">Contact</span>
                 </button>
@@ -113,11 +149,17 @@
                 <textarea type="text" name="c" id="c" placeholder="What is the reason of you contacting us ?" class='info'></textarea><br>
                 <button class="formBtn" type="button" >Send</button>
             </form>
-            <div class="msgsent">
+            <div class="msgsent en">
                 Informations have been sent <br>
                 successfully. <br>
                 Officers will contact you <br>
                 as soon as possible.
+            </div>
+            <div class="msgsent fr">
+                Informations envoyées avec <br>
+                succès. <br>
+                Nos officers vous contacterons <br>
+                dans les plus brefs délais.
             </div>
         </section>
     </main>

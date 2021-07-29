@@ -36,6 +36,13 @@ h2{
     text-align: center;
     color: white;
 }
+/* FRENCH/ENGLISH */
+.en{
+    display: none !important;
+}
+.fr{
+    display: block !important;
+}
 /* SCROLL */
 body::-webkit-scrollbar {
     width: 0.25rem;
@@ -124,6 +131,7 @@ body::-webkit-scrollbar-thumb {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 3.1rem;;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     background-color: #f9f9f9;
@@ -134,7 +142,7 @@ body::-webkit-scrollbar-thumb {
 .guide{
     padding-bottom: 5px;
 }
-.dropdown-content a {
+.dropdown-content a, .dropdown-content div a {
     float: none;
     color: var(--black);
     padding: 12px 16px;
@@ -142,13 +150,13 @@ body::-webkit-scrollbar-thumb {
     display: block;
     text-align: left;
 }
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-content div a:hover{
     background-color: #ddd;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content div{
     display: block;
 }
-.dropdown-content div{
+.dropdown-content, .dropdown-content div{
     margin-top: 5px;
 }
 .dropdown-content .xp a, .dropdown-content .gathering a, .dropdown-content .pvp a{
@@ -156,6 +164,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* CONTACT FORM */
+.formulaire{
+    opacity: 0;
+    pointer-events: none;
+    transition: .7s;
+}
 form{
     position: absolute;
     top: 5rem;
@@ -263,7 +276,7 @@ textarea[type=text]{
         filter: grayscale(60%);
     }
     .desktop{
-        display: none;
+        display: none !important;
     }
     .navbar{
         bottom: 0;
@@ -275,10 +288,10 @@ textarea[type=text]{
         margin: auto 1vw;
     }
     .dropdown-content{
-        top: -28.2rem;
+        top: -29.2rem;
     }
     .guide{
-        top: -31.8rem;
+        top: -32.5rem;
     }
     h2{
         width: 100vw;
