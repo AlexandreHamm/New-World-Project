@@ -50,5 +50,8 @@
 		successfully. <br>
 		Officers will contact you <br>
 		as soon as possible.');
-
+	// PLACEHOLDERS
+		define('chname','Character Name')
+		define('lvl','Character Level')
+		define('reas','Why are you contacting us ?')
 ?> 

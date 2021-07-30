@@ -137,9 +137,9 @@
 
         <section class="formulaire">
             <form class="formcontent">
-                <input type="text" name="a" id="a" placeholder="Nom du personnage" class='info'><br>
-                <input type="text" maxlength="2" pattern="^([1-9]|[1-5][0-9]|60|all)$" name="b" id="b" placeholder="Niveau du personnage" class='info'><br>
-                <textarea type="text" name="c" id="c" placeholder="Pour quelle raison nous contactez-vous ?" class='info'></textarea><br>
+                <input type="text" name="a" id="a" placeholder="<?php echo chname; ?>" class='info'><br>
+                <input type="number" maxlength="2" name="b" id="b" placeholder="<?php echo lvl; ?>" class='info'><br>
+                <textarea type="text" name="c" id="c" placeholder="<?php echo reas; ?>" class='info'></textarea><br>
                 <button class="formBtn" type="button" >Send</button>
             </form>
             <div class="confirmation">
