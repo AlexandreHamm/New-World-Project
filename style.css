@@ -341,7 +341,10 @@ textarea[type=text]{
     .flag{
         position: fixed;
         top: 2.4rem;
-        right: -.5rem;
+        right: .5rem;
+    }
+    .flag img{
+        border: 1px solid white;
     }
 
     .test1, .test2{
