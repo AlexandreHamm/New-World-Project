@@ -86,7 +86,7 @@
                             <a href="#"><?php echo ss; ?></a>
                             <a href="#"><?php echo hatch; ?></a>
                             <a href="#"><?php echo rap; ?></a>
-                            <a href="#"><?php echo lance; ?></a>
+                            <a href="#"><?php echo lan; ?></a>
                             <a href="#"><?php echo hamm; ?></a>
                             <a href="#"><?php echo grtx; ?></a>
                             <a href="#"><?php echo bow; ?></a>
