@@ -1,4 +1,5 @@
 <?php
+
 // NAVBAR
 
 	define('home',"Home");
@@ -43,6 +44,11 @@
 	define('iceg',"Ice Gauntlet");
 	define('lifes',"Life Staff");
 
+// CONTACT
 
+	define('confirm','Informations have been sent <br>
+		successfully. <br>
+		Officers will contact you <br>
+		as soon as possible.');
 
 ?> 

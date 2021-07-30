@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     cursor: pointer;
     border: none;
-    padding: none;
+    padding: 0;
     background: none;
     transform: translateY(-50%);
 }

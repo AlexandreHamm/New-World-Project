@@ -44,6 +44,14 @@
 	define('iceg',"Gantelet de froid");
 	define('lifes',"Bâton de vie");
 
+// CONTACT
+
+	define('confirm','Informations envoyées avec <br>
+		succès. <br>
+		Nos officiers vous contacterons <br>
+		dans les plus brefs délais.');
+
+
 // 
 
 	// define('VARIABLE_2',"Hachette");

@@ -105,7 +105,7 @@
                 </button>
             </li>
             <li class="flags">
-                <a class="flag" href="<?php echo link; ?>" target="_blank"><img src="<?php echo flag; ?>" alt="<?php echo alt; ?>"></a>
+                <a class="flag" href="<?php echo link; ?>"><img src="<?php echo flag; ?>" alt="<?php echo alt; ?>"></a>
             </li>
         </ul>
     </nav>
@@ -142,17 +142,8 @@
                 <textarea type="text" name="c" id="c" placeholder="Pour quelle raison nous contactez-vous ?" class='info'></textarea><br>
                 <button class="formBtn" type="button" >Send</button>
             </form>
-            <div class="confirmation en">
-                Informations have been sent <br>
-                successfully. <br>
-                Officers will contact you <br>
-                as soon as possible.
-            </div>
-            <div class="confirmation fr">
-                Informations envoyées avec <br>
-                succès. <br>
-                Nos officiers vous contacterons <br>
-                dans les plus brefs délais.
+            <div class="confirmation">
+                <?php echo confirm; ?>
             </div>
         </section>
     </main>
