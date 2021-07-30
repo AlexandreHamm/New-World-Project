@@ -1,34 +1,10 @@
-<?php // EN TETE DE FICHIER
-
-	  // http://mon_site.com/index.php?lang=fr
-
- 	 if ($_GET['lang']=='fr') {           // si la langue est 'fr' (français) on inclut le fichier fr-lang.php
-  	 include('french.php');
-  	 } 
-   	 
-   	 else if ($_GET['lang']=='en') {      // si la langue est 'en' (anglais) on inclut le fichier en-lang.php
-   	 include('english.php');
-   	 }
-   	 
-  	 else {                       // si aucune langue n'est déclarée on inclut le fichier fr-lang.php par défaut
-  	 include('french.php');
-   	 }
-   	 
-	 // Dans le HTML 
-	 /*EX : 
-	 
-	 <?php echo VARIABLE; ?> 
-	 
-	 */
-	 
-   	 ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Company website for War Dogs on Amazon's game 'New World'">
+    <meta name="description" content="Company site for War Dogs on Amazon's game 'New World'">
     <title>Project K. N. New World</title>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -42,15 +18,15 @@
             </li>
             <li class="nav-item">
                 <button class="dropbtn" label="Home" onclick='home()'>
-                    <img src="./src/svg/home.svg" alt="" class="mobile">
-                    <span class="desktop"><?php echo home; ?></span>
+                    <img src="./src/svg/home.svg" alt="" class="nav-icon mobile">
+                    <span class="desktop">Home</span>
                 </button>
             </li>
             <li class="nav-item">
                 <div class="dropdown">
                     <button class="dropbtn" label="Guides">
-                        <img src="./src/svg/guides.svg" alt="" class="mobile">
-                        <span class="desktop"><?php echo guid; ?></span>
+                        <img src="./src/svg/guides.svg" alt="" class="nav-icon mobile">
+                        <span class="desktop">Guides</span>
                     </button>
                     <div class="dropdown-content guide">
                         <div class="xp">
@@ -79,15 +55,15 @@
             <li class="nav-item">
                 <div class="dropdown">
                     <button class="dropbtn" label="Builds">
-                        <img src="./src/svg/builds.svg" alt="" class="mobile">
-                        <span class="desktop"><?php echo build; ?></span>
+                        <img src="./src/svg/builds.svg" alt="" class="nav-icon mobile">
+                        <span class="desktop">Builds</span>
                     </button>
                     <div class="dropdown-content">
                         <div class="weapons">
                             <a href="#"><?php echo ss; ?></a>
                             <a href="#"><?php echo hatch; ?></a>
                             <a href="#"><?php echo rap; ?></a>
-                            <a href="#"><?php echo lan; ?></a>
+                            <a href="#"><?php echo lance; ?></a>
                             <a href="#"><?php echo hamm; ?></a>
                             <a href="#"><?php echo grtx; ?></a>
                             <a href="#"><?php echo bow; ?></a>
@@ -101,12 +77,12 @@
             </li>
             <li class="nav-item">
                 <button class="dropbtn" label="Contact" onclick="contact()">
-                    <img src="./src/svg/contact.svg" alt="" class="mobile">
-                    <span class="desktop"><?php echo cntct; ?></span>
+                    <img src="./src/svg/contact.svg" alt="" class="nav-icon mobile">
+                    <span class="desktop">Contact</span>
                 </button>
             </li>
             <li class="flags">
-                <a class="flag" href="<?php echo link; ?>"><img src="<?php echo flag; ?>" alt="<?php echo alt; ?>"></a>
+                <a class="flag" href="<?php echo link; ?>"><img src="./src/svg/english.svg" alt="<?php echo alt; ?>"></a>
             </li>
         </ul>
     </nav>
@@ -135,9 +111,7 @@
             <div class="whiteboard"></div>
             <div class="whiteboard"></div>
         </section> -->
-
-        <div class="white"></div>
-
+        
         <section class="formulaire">
             <form class="formcontent">
                 <input type="text" name="a" id="a" placeholder="<?php echo chname; ?>" class='info'><br>
