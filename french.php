@@ -51,9 +51,9 @@
 		Nos officiers vous contacterons <br>
 		dans les plus brefs délais.');
 	// PLACEHOLDERS
-		define('chname','Nom du personnage')
-		define('lvl','Niveau du personnage')
-		define('reas','Pour quelle raison nous contactez-vous ?')
+		define('chname','Nom du personnage');
+		define('lvl','Niveau du personnage');
+		define('reas','Pour quelle raison nous contactez-vous ?');
 
 
 // 
