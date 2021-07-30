@@ -42,58 +42,35 @@
             <li class="nav-item">
                 <button class="dropbtn" label="Home" onclick='home()'>
                     <img src="./src/svg/home.svg" alt="" class="mobile">
-                    <div class=''>
-                        <span class="en">Home</span>
-                        <span class="desktop"><?php echo home; ?></span>
-                    </div>
+                    <span class="desktop"><?php echo home; ?></span>
                 </button>
             </li>
             <li class="nav-item">
                 <div class="dropdown">
                     <button class="dropbtn" label="Guides">
                         <img src="./src/svg/guides.svg" alt="" class="mobile">
-                        <span class="desktop">Guides</span>
+                        <span class="desktop"><?php echo guid; ?></span>
                     </button>
                     <div class="dropdown-content guide">
-                        <div class="xp en">
-                            <h1>Progressing</h1>
-                            <a href="#">Character EXP</a>
-                            <a href="#">Weapons EXP</a>
-                            <a href="#">Invasions</a>
+                        <div class="xp">
+                            <h1><?php echo prog; ?></h1>
+                            <a href="#"><?php echo chxp; ?></a>
+                            <a href="#"><?php echo wxp; ?></a>
+                            <a href="#"><?php echo inv; ?></a>
                         </div>
-                        <div class="xp fr">
-                            <h1>Progression</h1>
-                            <a href="#">Exp du Personnage</a>
-                            <a href="#">Exp des armes</a>
-                            <a href="#">Invasions</a>
+                        <div class="gathering">
+                            <h1><?php echo gather; ?></h1>
+                            <a href="#"><?php echo skin; ?></a>
+                            <a href="#"><?php echo min; ?></a>
+                            <a href="#"><?php echo log; ?></a>
+                            <a href="#"><?php echo harv; ?></a>
+                            <a href="#"><?php echo fish; ?></a>
                         </div>
-                        <div class="gathering en">
-                            <h1>Gathering</h1>
-                            <a href="#">Skinning</a>
-                            <a href="#">Mining</a>
-                            <a href="#">Logging</a>
-                            <a href="#">Harvesting</a>
-                            <a href="#">Fishing</a>
-                        </div>
-                        <div class="gathering fr">
-                            <h1>Exploitation</h1>
-                            <a href="#">Dépeçage</a>
-                            <a href="#">Mineur</a>
-                            <a href="#">Bûcheron</a>
-                            <a href="#">Récolte</a>
-                            <a href="#">Pêcheur</a>
-                        </div>
-                        <div class="pvp en">
-                            <h1>PvP</h1>
-                            <a href="#">Wars</a>
-                            <a href="#">Fortresses</a>
-                            <a href="#">Cities</a>
-                        </div>
-                        <div class="pvp fr">
-                            <h1>PvP</h1>
-                            <a href="#">Guerres</a>
-                            <a href="#">Forteresses</a>
-                            <a href="#">Contrôle de villes</a>
+                        <div class="pvp">
+                            <h1><?php echo pvp; ?></h1>
+                            <a href="#"><?php echo war; ?></a>
+                            <a href="#"><?php echo fort; ?></a>
+                            <a href="#"><?php echo city; ?></a>
                         </div>
                     </div>
                 </div>
@@ -102,34 +79,21 @@
                 <div class="dropdown">
                     <button class="dropbtn" label="Builds">
                         <img src="./src/svg/builds.svg" alt="" class="mobile">
-                        <span class="desktop">Builds</span>
+                        <span class="desktop"><?php echo build; ?></span>
                     </button>
                     <div class="dropdown-content">
-                        <div class="en">
-                            <a href="#">Sword & Shield</a>
-                            <a href="#">Hatchet</a>
-                            <a href="#">Rapier</a>
-                            <a href="#">Lance</a>
-                            <a href="#">Hammer</a>
-                            <a href="#">Greataxe</a>
-                            <a href="#">Bow</a>
-                            <a href="#">Musket</a>
-                            <a href="#">Fire Staff</a>
-                            <a href="#">Ice Gauntlet</a>
-                            <a href="#">Life Staff</a>
-                        </div>
-                        <div class="fr">
-                            <a href="#">Epée et bouclier</a>
-                            <a href="#">Hachette</a>
-                            <a href="#">Rapière</a>
-                            <a href="#">Lance</a>
-                            <a href="#">Marteau</a>
-                            <a href="#">Hache 2 mains</a>
-                            <a href="#">Arc</a>
-                            <a href="#">Fusil</a>
-                            <a href="#">Bâton de feu</a>
-                            <a href="#">Gantelet de froid</a>
-                            <a href="#">Bâton de vie</a>
+                        <div class="weapons">
+                            <a href="#"><?php echo ss; ?></a>
+                            <a href="#"><?php echo hatch; ?></a>
+                            <a href="#"><?php echo rap; ?></a>
+                            <a href="#"><?php echo lance; ?></a>
+                            <a href="#"><?php echo hamm; ?></a>
+                            <a href="#"><?php echo grtx; ?></a>
+                            <a href="#"><?php echo bow; ?></a>
+                            <a href="#"><?php echo musk; ?></a>
+                            <a href="#"><?php echo fires; ?></a>
+                            <a href="#"><?php echo iceg; ?></a>
+                            <a href="#"><?php echo lifes; ?></a>
                         </div>
                     </div>
                 </div>
@@ -137,12 +101,11 @@
             <li class="nav-item">
                 <button class="dropbtn" label="Contact" onclick="contact()">
                     <img src="./src/svg/contact.svg" alt="" class="mobile">
-                    <span class="desktop">Contact</span>
+                    <span class="desktop"><?php echo cntct; ?></span>
                 </button>
             </li>
             <li class="flags">
-                <button class="flag frLang"><img src="./src/svg/english.svg" alt="Changer la langue du site vers le français" onclick="en()"></button>
-                <button class="flag enLang"><img src="./src/svg/french.svg" alt="Change website language to english" onclick="fr()"></button>
+                <a class="flag"><img src="<?php echo flag; ?>" alt="Changer la langue du site vers le français" href='<?php echo link; ?>' target='_blank'></a>
             </li>
         </ul>
     </nav>

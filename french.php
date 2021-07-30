@@ -7,6 +7,10 @@
 	define('build',"Builds");
 	define('cntct',"Contact");
 
+// FLAG
+	define('flag','./src/svg/english.svg');
+	define('link','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=en');
+
 // GUIDES
 	define('prog',"Progression");
 		define('chxp',"Exp du personnage");

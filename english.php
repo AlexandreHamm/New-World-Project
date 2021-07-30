@@ -6,6 +6,10 @@
 	define('build',"Builds");
 	define('cntct',"Contact");
 
+// FLAG
+	define('flag','./src/svg/french.svg');
+	define('link','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=fr');
+
 // GUIDES
 	define('prog',"Progressing");
 		define('chxp',"Character EXP");
@@ -26,17 +30,17 @@
 
 // BUILDS
 	
-	define('ss',"Epée et bouclier");	
-	define('hatch',"Hachette");
-	define('rap',"Rapière");
+	define('ss',"Sword & Shield");	
+	define('hatch',"Hatchet");
+	define('rap',"Rapier");
 	define('lan',"Lance");
-	define('hamm',"Marteau");
-	define('grtx',"Hache 2 mains");
-	define('bow',"Arc");
-	define('musk',"Fusil");
-	define('fires',"Bâton de feu");
-	define('iceg',"Gantelet de froid");
-	define('lifes',"Bâton de vie");
+	define('hamm',"Hammer");
+	define('grtx',"Greataxe");
+	define('bow',"Box");
+	define('musk',"Musket");
+	define('fires',"Fire Staff");
+	define('iceg',"Ice Gauntlet");
+	define('lifes',"Life Staff");
 
 
 
