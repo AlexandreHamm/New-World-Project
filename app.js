@@ -1,9 +1,5 @@
 let contactForm = document.querySelector('.formulaire'),
-    confirmation = document.querySelector('.confirmation'),
-    fra = document.querySelector('.fr'),
-    eng = document.querySelector('.en'),
-    frLang = document.querySelector('.frLang'),
-    enLang = document.querySelector('.enLang');
+    confirmation = document.querySelector('.confirmation');
     
 
 

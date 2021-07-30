@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="header mobile"></div>
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
