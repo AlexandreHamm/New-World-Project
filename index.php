@@ -105,7 +105,7 @@
                 </button>
             </li>
             <li class="flags">
-                <a class="flag"><img src="<?php echo flag; ?>" alt="Changer la langue du site vers le français" href='<?php echo link; ?>' target='_blank'></a>
+                <a class="flag" href="<?php echo link; ?>" target="_blank"><img src="<?php echo flag; ?>" alt="<?php echo alt; ?>"></a>
             </li>
         </ul>
     </nav>

@@ -9,6 +9,7 @@
 
 // FLAG
 	define('flag','./src/svg/english.svg');
+	define('alt','Set website language to english');
 	define('link','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=en');
 
 // GUIDES
