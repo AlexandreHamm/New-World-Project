@@ -169,12 +169,13 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     z-index: 999;
     top: 50%;
-    right: 0;
+    right: 1rem;
     cursor: pointer;
     border: none;
     padding: 0;
     background: none;
     transform: translateY(-50%);
+    filter: grayscale(30%);
 }
 .flag img{
     max-width: 25px;
