@@ -2,7 +2,7 @@
 
 // NAVBAR
 
-	define('logo','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=en')
+	define('logo','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=en');
 
 	define('home',"home");
 	define('guid',"guides");
