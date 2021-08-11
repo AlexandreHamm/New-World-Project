@@ -19,7 +19,7 @@
     --pica: "IMFellDWPica", Arial, sans-serif;
     --dumb: "Dumbledor", Arial, sans-serif;
     --lock: "Scurlock", Arial, sans-serif;
-    --black: #222222;
+    --black: #181819;
 }
 /* RESET */
 *{
@@ -63,27 +63,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #ffffff;
 }
-/* BACKGROUND */
-
-.backgroundIMG{
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    z-index: -3;
-    opacity: 10%;
-    width: 100vw;
-}
-.backgroundLogo{
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    z-index: -2;
-    position: fixed;
-    opacity: 30%;
-}
 /* NAVBAR */
 .logo{
     position: absolute;
@@ -104,7 +83,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     width: 100vw;
     max-height: 50px;
-    background-color: #181819;
+    background-color: var(--black);
     font-family: var(--lock);
     font-size: 21px;
     z-index: 99;
@@ -173,6 +152,28 @@ body::-webkit-scrollbar-thumb {
 }
 .dropdown-content .xp a, .dropdown-content .gathering a, .dropdown-content .pvp a{
     margin: -5px 0;
+}
+
+/* DIVIDER */
+
+.custom-shape-divider-top-1628705157 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1628705157 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1628705157 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* FLAGS */
@@ -295,11 +296,10 @@ textarea[type=text]{
     left: 50%;
     display: block;
     width: 40vw;
-    color: var(--black);
-    background-color: rgb(214, 214, 214);
+    color: white;
     text-align: justify;
     transform: translate(-50%);
-    padding: 70px 10px 0 10px;
+    padding: 60px 10px 0 10px;
 }
 @media screen and (max-width: 700px) {
     .backgroundIMG{
