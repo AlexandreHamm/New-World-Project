@@ -42,10 +42,10 @@
     <div class="header mobile"></div>
     <nav class="navbar">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <img src="./src/svg/logotest.svg" alt="" class="logo">
-                <span class="logotxt">war dogs</span>
-            </li>
+        <a href="<?php echo logo; ?>" class="nav-item">
+                <img src="./src/svg/cavecanem.svg" alt="" class="logo">
+                <span class="logotxt">cave canem</span>
+            </a>
             <li class="nav-item">
                 <button class="dropbtn" label="Home" onclick='home()'>
                     <img src="./src/svg/home.svg" alt="" class="mobile">

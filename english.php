@@ -2,10 +2,12 @@
 
 // NAVBAR
 
-	define('home',"Home");
-	define('guid',"Guides");
-	define('build',"Builds");
-	define('cntct',"Contact");
+	define('logo','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=en')
+
+	define('home',"home");
+	define('guid',"guides");
+	define('build',"builds");
+	define('cntct',"contact");
 
 // FLAG
 	define('flag','./src/svg/french.svg');
