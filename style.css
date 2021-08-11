@@ -124,6 +124,7 @@ body::-webkit-scrollbar-thumb {
 .dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
     max-height: 50px;
     background-color: #f89e6b;
+    color: var(--black);
     transition: 0.5s;
 }
 .dropdown-content {
