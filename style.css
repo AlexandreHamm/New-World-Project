@@ -48,6 +48,13 @@ h2{
     text-align: center;
     color: white;
 }
+h3{
+    font-family: var(--cafe);
+    text-transform: uppercase;
+    text-align: center; 
+    color: var(--black); 
+    margin-bottom: 10px;
+}
 li{
     list-style-type: none;
 }
@@ -200,9 +207,14 @@ body::-webkit-scrollbar-thumb {
     pointer-events: none;
     transition: .7s;
 }
+form h3{
+    display: block;
+    margin-bottom: 30px;
+    opacity: inherit;
+}
 form{
     position: absolute;
-    top: 5rem;
+    top: 60px;
     left: 50%;
     width: 20rem;
     color: white;
@@ -360,8 +372,11 @@ textarea[type=text]{
         left: 50%;
         transform: translate(-50%);
     }
+    form h3{
+        margin-bottom: 3.5rem;
+    }
     form{
-        top: 7rem;
+        top: 60px;
     }
     .confirmation{
         top: 8rem;
@@ -395,6 +410,9 @@ textarea[type=text]{
         width: 100vw;
     }
 
+    .dropdown .dropbtn,.nav-item .dropbtn {
+        max-height: 200px;
+    }
     .dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
         max-height: 200px;
     }

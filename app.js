@@ -1,6 +1,5 @@
 let contactForm = document.querySelector('.formulaire'),
-    confirmation = document.querySelector('.confirmation')
-    
+    confirmation = document.querySelector('.confirmation');
 
 
 function home(){
