@@ -394,6 +394,10 @@ textarea[type=text]{
     .white{
         width: 100vw;
     }
+
+    .dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
+        max-height: 200px;
+    }
 }
 
 @media screen and (min-width: 700px) {
