@@ -460,7 +460,7 @@ textarea[type=text]{
     .white{
         padding: 30px 10px;
     }
-    .flags a{
+    .flags{
         display: block;
     }
 }
