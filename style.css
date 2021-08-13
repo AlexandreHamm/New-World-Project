@@ -463,6 +463,9 @@ textarea[type=text]{
     .flags{
         display: block;
     }
+    .lang{
+        display: none;
+    }
 }
 
 
