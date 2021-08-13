@@ -10,9 +10,12 @@
 	define('cntct',"contact");
 
 // FLAG
-	define('flag','./src/svg/french.svg');
+	define('flag1','./src/svg/english.svg');
+	define('flag2','./src/svg/french.svg');
 	define('alt','Changer la langue du site en français');
 	define('link','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=fr');
+	define('fr/en','english');
+	define('en/fr','français');
 
 // GUIDES
 	define('prog',"Progressing");

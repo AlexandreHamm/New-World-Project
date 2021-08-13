@@ -1,0 +1,439 @@
+/* FONTS */
+@font-face {
+    font-family: "Dumbledor";
+    src: url("./src/fonts/Dumbledor.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Scurlock";
+    src: url("./src/fonts/Scurlock.TTF") format("truetype");
+}
+@font-face {
+    font-family: "Louis George Cafe";
+    src: url("./src/fonts/Louis\ George\ Cafe.ttf") format("truetype");
+}
+/* VARIABLES */
+:root{
+    font-size: 16px;
+    --song: "please_write_me_a_song", Arial, sans-serif;
+    --cafe: "Louis George Cafe", Arial, sans-serif;
+    --pica: "IMFellDWPica", Arial, sans-serif;
+    --dumb: "Dumbledor", Arial, sans-serif;
+    --lock: "Scurlock", Arial, sans-serif;
+    --black: #181819;
+}
+/* RESET */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* GENERAL */
+body{
+    background-color: var(--black);
+}
+button{
+    cursor: pointer;
+    transition: 0.5s;
+}
+h1{
+    font-size: 18px;
+    margin: 10px 10px;
+}
+h2{
+    display: none;
+    font-size: 40px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-family: var(--cafe);
+    text-transform: uppercase;
+    text-align: center; 
+    color: var(--black); 
+    margin-bottom: 10px;
+}
+li{
+    list-style-type: none;
+}
+/* SCROLL */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+/* NAVBAR */
+.logo{
+    position: absolute;
+    top: 1px;
+    left: 0.3rem;
+    max-width: 46px;
+}
+.logotxt{
+    position: absolute;
+    top: 35%;
+    left: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px var(--black);
+    font-family: var(--dumb);
+}
+.navbar{
+    position: fixed;
+    width: 100vw;
+    max-height: 50px;
+    background-color: var(--black);
+    font-family: var(--lock);
+    font-size: 21px;
+    z-index: 99;
+    border-bottom: 1px solid #f89e6b;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.navbar-nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn,.nav-item .dropbtn {
+    max-height: 50px;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
+    max-height: 50px;
+    background-color: #f89e6b;
+    color: var(--black);
+    transition: 0.5s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2.75rem;;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.guide{
+    padding-bottom: 5px;
+}
+.dropdown-content div a {
+    float: none;
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover, .dropdown-content div a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content, .dropdown-content div{
+    margin-top: 5px;
+}
+.dropdown-content .xp a, .dropdown-content .gathering a, .dropdown-content .pvp a{
+    margin: -5px 0;
+}
+
+/* DIVIDER */
+
+.custom-shape-divider-top-1628705157 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1628705157 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1628705157 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* FLAGS */
+.flag{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    right: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: none;
+    transform: translateY(-50%);
+    filter: grayscale(30%);
+}
+.flag img{
+    max-width: 25px;
+    border: 1px solid white;
+    
+}
+/* CONTACT FORM */
+.formulaire{
+    opacity: 0;
+    pointer-events: none;
+    transition: .7s;
+}
+form h3{
+    display: block;
+    margin-bottom: 30px;
+    opacity: inherit;
+}
+form{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 20rem;
+    color: white;
+    transform: translate(-50%);
+    transition: 0.5s;
+}
+input, textarea{
+    height: 2rem;
+    width: 100%;
+    background-color: var(--black);
+    color: white;
+    border: 2px solid #f89e6b;
+    margin-bottom: 1rem;
+}
+textarea{
+    height: 200px;
+}
+input::placeholder, textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    opacity: 50%;
+}
+input[type=text], input[type=number], textarea[type=text]{
+    padding-left: 6px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+textarea[type=text]{
+    padding-top: 5px;
+}
+.formBtn{
+    height: 2rem;
+    margin-left: 50%;
+    background-color: var(--black);
+    color: white;
+    border: 2px solid #f89e6b;
+    transform: translate(-50%);
+}
+
+.confirmation{
+    font-family: var(--cafe);
+    pointer-events: none;
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    width: 30rem;
+    color: white;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 30px;
+    transition: 3s;
+    opacity: 0;
+    padding: 10px 20px;
+    border: 3px solid #f89e6b;
+    background-color: var(--black);
+}
+.hideForm{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* TEST */
+
+.test1, .test2{
+    display: flex;
+    justify-content: center;
+}
+.test1{
+    margin-top: 50px;
+}
+.whiteboard{
+    display: none;
+    cursor: pointer;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    background-color: rgb(185, 159, 141);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.white{
+    font-family: var(--cafe);
+    position: relative;
+    left: 50%;
+    display: block;
+    width: 40vw;
+    color: white;
+    text-align: justify;
+    transform: translate(-50%);
+    padding: 60px 10px 0 10px;
+}
+@media screen and (max-width: 700px) {
+    .backgroundIMG{
+        top: 0;
+    }
+    .mobile{
+        display: block;
+    }
+    .nav-icon{
+        max-width: 50px;
+        max-height: 50px;
+        filter: grayscale(60%);
+    }
+    .dropBtn img{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .desktop{
+        display: none !important;
+    }
+    .navbar{
+        max-height: 100px;
+        bottom: 0;
+    }
+    button{
+        min-width: 80px;
+    }
+    .dropbtn{
+        max-height: 76px;
+    }
+    .nav-item{
+        margin: auto 1vw;
+    }
+    .dropdown-content{
+        top: -29.165rem;
+    }
+    .guide{
+        top: -32.5rem;
+    }
+    h2{
+        width: 100vw;
+        padding-top: 5px;
+        background-color: var(--black);
+        margin-top: 0;
+    }
+    .logo, .logotxt{
+        position: fixed;
+        pointer-events: none;
+    }
+    .logo{
+        max-width: 48px;
+        top: 0;
+        left: 5px;
+    }
+    .logotxt{
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    form h3{
+        margin-bottom: 3.5rem;
+    }
+    form{
+        top: 60px;
+    }
+    .confirmation{
+        top: 8rem;
+        max-width: 90vw;
+        margin: auto .5vw;
+    }
+    .flag{
+        position: fixed;
+        top: 1.8rem;
+        right: .5rem;
+    }
+
+    .whiteboard{
+        max-width: 100vw;
+    }
+
+    .test1, .test2{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        z-index: 98;
+        width: 100vw;
+        height: 50px;
+        background-color: var(--black);
+    }
+    .white{
+        width: 100vw;
+    }
+
+    .dropdown .dropbtn,.nav-item .dropbtn {
+        max-height: 200px;
+    }
+    .dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
+        max-height: 200px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .backgroundIMG{
+        top: -20%;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .navbar{
+        top: 0;
+        min-height: 50px;
+    }
+    button{
+        min-width: 100px;
+    }
+}
