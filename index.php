@@ -44,7 +44,7 @@
             <span class="logotxt">cave canem</span>
         </a>
         <div class="dropdown">
-            <a class="flag"><img src="./src/svg/english.svg" alt="<?php echo flag1; ?>"> <span class="lang"><?php echo fr/en; ?></span></a>
+            <a class="flag"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"> <span class="lang"><?php echo fr/en; ?></span></a>
             <div class="dropdown-content flags">
                 <a class="flag" href="<?php echo link; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"> <span class="lang"><?php echo en/fr; ?></span></a>
             </div>
