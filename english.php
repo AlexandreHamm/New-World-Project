@@ -14,8 +14,8 @@
 	define('flag2','./src/svg/french.svg');
 	define('alt','Changer la langue du site en français');
 	define('link','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=fr');
-	define('fr/en','english');
-	define('en/fr','français');
+	define('frEN','english');
+	define('enFR','français');
 
 // GUIDES
 	define('prog',"Progressing");
