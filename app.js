@@ -33,8 +33,7 @@ function fullscreen(){
         $('nav').css('transform','translateX(-111%) translateY(-20%)');
         $('.navbar-nav').css('flex-direction','column');
         $('.dropbtn').css({'width':'15.35vw','height':'100px','max-height':'100px','font-size':'1.8rem'});
-        $('.guide').css('transform','translateX(185%) translateY(21.5%)');
-        $('.build').css('transform','translateX(185%) translateY(56.2%)');
+        $('.dropdown-content').css('left','42.7vw');
         $('.bgvid').css('display','none');
         cont = 1;
     }
