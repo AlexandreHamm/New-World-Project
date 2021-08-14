@@ -203,7 +203,7 @@ header{
     margin-top: 20px;
     z-index: 999;
     padding: 0;
-    transform: translateX(-20.5px);
+    transform: translateX(-25.5px);
 }
 .flag{
     position: absolute;
@@ -235,9 +235,10 @@ header{
     cursor: initial;
 }
 .flag .arrow{
-    max-width: 17px;
+    margin-left: 5px;
+    max-width: 8px;
     border: none;
-    transform: translateY(-1px);
+    transform: translateY(1px);
 }
 /* FULLSCREEN BTN */
 .fullscrnBtn{
