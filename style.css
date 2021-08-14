@@ -203,6 +203,7 @@ header{
     margin-top: 20px;
     z-index: 999;
     padding: 0;
+    transform: translateX(-20.5px);
 }
 .flag{
     position: absolute;
@@ -233,8 +234,9 @@ header{
 .dropdown > .flag{
     cursor: initial;
 }
-.lang{
-    margin-left: 3px;
+.flag .arrow{
+    max-height: 20px;
+    border: none;
 }
 /* FULLSCREEN BTN */
 .fullscrnBtn{
@@ -282,7 +284,7 @@ header{
 .formulaire{
     width: 100%;
     padding: 50px;
-    position: relative;
+    position: absolute;
     opacity: 0;
     pointer-events: none;
     transition: .7s;

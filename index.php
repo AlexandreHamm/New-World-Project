@@ -44,9 +44,9 @@
             <span class="logotxt">cave canem</span>
         </a>
         <div class="dropdown">
-            <a class="flag desktop"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"> <span class="lang"><?php echo frEN; ?></span></a>
+            <a class="flag desktop"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='./src/svg/arrow.svg' alt=''></a>
             <div class="dropdown-content flags">
-                <a class="flag" href="<?php echo link; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"> <span class="lang"><?php echo enFR; ?></span></a>
+                <a class="flag" href="<?php echo link; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
             </div>
         </div>
     </header>
@@ -130,17 +130,17 @@
                 </p>
             </div>
             <section class="formulaire">
-            <form class="formcontent">
-                <h3>formulaire</h3>
-                <input type="text" name="a" id="a" placeholder="<?php echo chname; ?>" class='info'><br>
-                <input type="number" maxlength="2" name="b" id="b" placeholder="<?php echo lvl; ?>" class='info'><br>
-                <textarea type="text" name="c" id="c" placeholder="<?php echo reas; ?>" class='info'></textarea><br>
-                <button class="formBtn" type="button" ><?php echo send; ?></button>
-            </form>
-            <div class="confirmation">
-                <?php echo confirm; ?>
-            </div>
-        </section>
+                <form class="formcontent">
+                    <h3>formulaire</h3>
+                    <input type="text" name="a" id="a" placeholder="<?php echo chname; ?>" class='info'><br>
+                    <input type="number" maxlength="2" name="b" id="b" placeholder="<?php echo lvl; ?>" class='info'><br>
+                    <textarea type="text" name="c" id="c" placeholder="<?php echo reas; ?>" class='info'></textarea><br>
+                    <button class="formBtn" type="button" ><?php echo send; ?></button>
+                </form>
+                <div class="confirmation">
+                    <?php echo confirm; ?>
+                </div>
+            </section>
         </div>
         
     </main>
