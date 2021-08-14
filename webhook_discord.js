@@ -69,9 +69,9 @@ $(".formBtn").click(function(e) {
                             // author
                             // - icon next to text at top (text is a link)
                             author: {
-                                name: 'K9',
+                                name: 'Cave Canem',
                                 url: 'https://alexandreh.promo-90.codeur.online/New-World-Project/',
-                                icon_url: 'https://i.imgur.com/EXdVGUh.png',
+                                icon_url: 'https://i.imgur.com/wKKjAdG.png',
                             },
                             // embed title
                             // - link on 2nd row
