@@ -235,8 +235,9 @@ header{
     cursor: initial;
 }
 .flag .arrow{
-    max-height: 20px;
+    max-width: 17px;
     border: none;
+    transform: translateY(-1px);
 }
 /* FULLSCREEN BTN */
 .fullscrnBtn{
