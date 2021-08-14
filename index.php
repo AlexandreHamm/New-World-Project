@@ -44,9 +44,9 @@
             <span class="logotxt">cave canem</span>
         </a>
         <div class="dropdown">
-            <a class="flag"><img src="./src/svg/english.svg" alt="<?php echo alt; ?>"><img src='./src/svg/arrow.svg' alt='' class="arrow"></a>
+            <a class="flag desktop"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='./src/svg/arrow.svg' alt='' class="arrow"></a>
             <div class="dropdown-content flags">
-                <a class="flag" href="<?php echo link; ?>"><img src="./src/svg/french.svg" alt="<?php echo alt; ?>"></a>
+                <a class="flag" href="<?php echo link; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
             </div>
         </div>
     </header>
