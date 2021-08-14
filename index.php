@@ -94,7 +94,7 @@
                         <img src="./src/svg/builds.svg" alt="" class="nav-icon mobile">
                         <span class="desktop"><?php echo build; ?></span>
                     </button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content build">
                         <div class="weapons">
                             <a href="#"><?php echo ss; ?></a>
                             <a href="#"><?php echo hatch; ?></a>

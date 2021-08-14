@@ -131,7 +131,7 @@ header{
     font-family: var(--lock);
     font-size: 21px;
     z-index: 99;
-    transform: translate(-50%);
+    transform: translateX(-50%);
 }
 .navbar-nav{
     position: relative;
