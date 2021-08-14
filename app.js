@@ -29,13 +29,11 @@ function contact(){
 function fullscreen(){
     if(cont == 0){
         $('.container').css({'position':'absolute','right':'0','transform':'translate(0)','width':'85vw','height':'100vh','margin-top':'0'});
-        $('.fullscrnBtn').css({'top':'0','right':'0'});
         $('.bgvid').css('display','none');
         cont = 1;
     }
     else if(cont == 1){
         $('.container').css({'position':'relative','right':'-50%','transform':'translateX(-50%)','width':'70vw','height':'100vh','margin-top':'2rem'});
-        $('.fullscrnBtn').css({'top':'20vh','right':'13.7vw'});
         $('.bgvid').css('display','block');
         cont = 0;
     }
