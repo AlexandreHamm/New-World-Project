@@ -51,7 +51,7 @@ $(".formBtn").click(function(e) {
 
             $.ajax({
                 type: "POST",
-                url: "https://discord.com/api/webhooks/869954184324210739/fOdF39yL-B4Jz5QHscBk9KiAYt-3wTpDQzf9KQtlSCLFVCxlDD41G93yYquFF5ZxqGR0",
+                url: "https://discord.com/api/webhooks/869547241860395058/vV7hV497JqhnhpUkPV4TmcCtkuLJrraA5VfV_KfQasxMKmQdwh5rOzzA0-rIAdEFfM5-",
                 headers: {
                     'Content-Type': 'application/json',
                 },
