@@ -539,7 +539,7 @@ textarea[type=text]{
     .lang{
         display: none;
     }
-    .progress-wrap{
+    .mouse-cursor{
         display: none;
     }
 }
