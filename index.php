@@ -144,7 +144,10 @@
         </div>
         
     </main>
-    <div id="moving_div"></div>
+    <div class="progress-wrap cursor-pointer">
+        <div class="mouse-cursor cursor-outer" style="visibility: visible; transform: translate(656px, 240px);"></div>
+        <div class="mouse-cursor cursor-inner" style="visibility: visible; transform: translate(656px, 273px);"></div>
+    </div>
     <div class="background">
         <video src="./src/vid/background.mp4" autoplay muted loop class="bgvid"></video>
     </div>
