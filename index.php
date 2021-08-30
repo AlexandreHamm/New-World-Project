@@ -53,14 +53,14 @@
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <button class="dropbtn" label="Home" onclick='home()'>
+                <button class="dropbtn" aria-label="Home" onclick='home()'>
                     <img src="./src/svg/home.svg" alt="" class="nav-icon mobile">
                     <span class="desktop"><?php echo home; ?></span>
                 </button>
             </li>
             <li class="nav-item">
                 <div class="dropdown">
-                    <button class="dropbtn" label="Guides">
+                    <button class="dropbtn" aria-label="Guides">
                         <img src="./src/svg/guides.svg" alt="" class="nav-icon mobile">
                         <span class="desktop"><?php echo guid; ?></span>
                     </button>
@@ -90,7 +90,7 @@
             </li>
             <li class="nav-item">
                 <div class="dropdown">
-                    <button class="dropbtn" label="Builds">
+                    <button class="dropbtn" aria-label="Builds">
                         <img src="./src/svg/builds.svg" alt="" class="nav-icon mobile">
                         <span class="desktop"><?php echo build; ?></span>
                     </button>
@@ -112,7 +112,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <button class="dropbtn" label="Contact" onclick="contact()">
+                <button class="dropbtn" aria-label="Contact" onclick="contact()">
                     <img src="./src/svg/contact.svg" alt="" class="nav-icon mobile">
                     <span class="desktop"><?php echo cntct; ?></span>
                 </button>
