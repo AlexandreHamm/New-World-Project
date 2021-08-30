@@ -539,6 +539,9 @@ textarea[type=text]{
     .lang{
         display: none;
     }
+    .progress-wrap{
+        display: none;
+    }
 }
 
 

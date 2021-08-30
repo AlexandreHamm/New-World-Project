@@ -80,6 +80,16 @@ $(function () {
     mousecursor();
 });
 
+// INPUT NUMBER LOCKS
+
+$(".info").change(function () {
+    if (parseInt($(this).val()) > parseInt($(this).attr("max"))) {
+       $(this).val($(this).attr("max"));
+    } else if (parseInt($(this).val()) < parseInt($(this).attr("min"))) {
+       $(this).val($(this).attr("min"));
+    }
+});
+
 // CURSOR IN/OUT OF WINDOW
 
 $(document).mouseenter(function () {

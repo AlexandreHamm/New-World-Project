@@ -133,7 +133,7 @@
                 <form class="formcontent">
                     <h3>formulaire</h3>
                     <input type="text" name="a" id="a" placeholder="<?php echo chname; ?>" class='info'><br>
-                    <input type="number" maxlength="2" name="b" id="b" placeholder="<?php echo lvl; ?>" class='info'><br>
+                    <input type="number" value='1' min='1' max="60" name="b" id="b" placeholder="<?php echo lvl; ?>" class='info'><br>
                     <textarea type="text" name="c" id="c" placeholder="<?php echo reas; ?>" class='info'></textarea><br>
                     <button class="formBtn" type="button" ><?php echo send; ?></button>
                 </form>
