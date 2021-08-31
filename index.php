@@ -34,7 +34,7 @@
     <meta property="og:site_name" content="Ad Gloriam">
     <meta property="og:title" content="Ad Gloriam" />
     <meta property="og:description" content="Website for company Ad Gloriam on Amazon's game 'New World'" />
-    <meta property="og:image" itemprop="image" content="./src/favicon/apple-touch-icon.png">
+    <meta property="og:image" itemprop="image" content="https://alexandreh.promo-90.codeur.online/Ad-Gloriam/src/svg/cavecanem.svg">
     <meta property="og:type" content="website" />
     <!--  -->
     <title>Ad Gloriam</title>
