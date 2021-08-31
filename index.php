@@ -29,7 +29,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Company site for Cave Canem on Amazon's game 'New World'">
-    <title>Cave Canem</title>
+    <meta name="keywords" content="Ad, Gloriam, Ad Gloriam, New, World, New World, Amazon, Game, Company">
+    <title>Ad Gloriam</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
@@ -41,7 +42,7 @@
     <header>
         <a href="<?php echo logo; ?>" class="divLogo">
             <img src="./src/svg/cavecanem.svg" alt="" class="logo">
-            <span class="logotxt">cave canem</span>
+            <span class="logotxt">ad gloriam</span>
         </a>
         <div class="dropdown">
             <a class="flag" href="#"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='./src/svg/arrow.svg' alt='' class="arrow"></a>
@@ -144,10 +145,6 @@
         </div>
         
     </main>
-    <div class="progress-wrap cursor-pointer">
-        <div class="mouse-cursor cursor-outer" style="visibility: visible; transform: translate(656px, 240px);"></div>
-        <div class="mouse-cursor cursor-inner" style="visibility: visible; transform: translate(656px, 273px);"></div>
-    </div>
     <div class="background">
         <video src="./src/vid/background.mp4" autoplay muted loop class="bgvid"></video>
     </div>
