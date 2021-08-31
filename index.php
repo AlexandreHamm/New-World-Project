@@ -28,8 +28,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Company site for War Dogs on Amazon's game 'New World'">
-    <title>Canes Venatici</title>
+    <meta name="description" content="Company site for Cave Canem on Amazon's game 'New World'">
+    <title>Cave Canem</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
@@ -41,7 +41,7 @@
     <header>
         <a href="<?php echo logo; ?>" class="divLogo">
             <img src="./src/svg/cavecanem.svg" alt="" class="logo">
-            <span class="logotxt">canes venatici</span>
+            <span class="logotxt">cave canem</span>
         </a>
         <div class="dropdown">
             <a class="flag" href="#"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='./src/svg/arrow.svg' alt='' class="arrow"></a>
