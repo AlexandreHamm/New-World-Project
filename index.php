@@ -30,6 +30,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for company Ad Gloriam on Amazon's game 'New World'">
     <meta name="keywords" content="Ad, Gloriam, Ad Gloriam, New, World, New World, Amazon, Game, Company">
+    <!-- Link Thumbnail -->
+    <meta property="og:site_name" content="Ad Gloriam">
+    <meta property="og:title" content="Ad Gloriam" />
+    <meta property="og:description" content="Website for company Ad Gloriam on Amazon's game 'New World'" />
+    <meta property="og:image" itemprop="image" content="./src/favicon/apple-touch-icon.png">
+    <meta property="og:type" content="website" />
+    <!--  -->
     <title>Ad Gloriam</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
