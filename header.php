@@ -43,9 +43,9 @@
             <span class="logotxt">ad gloriam</span>
         </a>
         <div class="dropdown">
-            <button class="flag"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='/ad-gloriam/src/svg/arrow.svg' alt='' class="arrow"></button>
+            <button class="flag"><img src="/ad-gloriam/<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='/ad-gloriam/src/svg/arrow.svg' alt='' class="arrow"></button>
             <div class="dropdown-content flags">
-                <a class="flag <?php echo fClass;?>" href="/ad-gloriam/<?php echo lang; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
+                <a class="flag <?php echo fClass;?>" href="./<?php echo lang; ?>"><img src="/ad-gloriam/<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
             </div>
         </div>
     </header>
