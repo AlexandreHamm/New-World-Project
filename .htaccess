@@ -1,6 +1,5 @@
 <IfModule mod_rewrite.c>
  RewriteEngine on
  RewriteRule ^([a-z]{2,2})/ index.php?lang=$1
- RewriteCond %{REQUEST_FILENAME}.php -f
- RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
 </IfModule>
