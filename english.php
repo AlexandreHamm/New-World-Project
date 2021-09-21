@@ -10,8 +10,8 @@
 // FLAG
 	define('idFR','fr');
 	define('idEN', 'en');
-	define('flag1','/src/svg/english.svg');
-	define('flag2','/src/svg/french.svg');
+	define('flag1','src/svg/english.svg');
+	define('flag2','src/svg/french.svg');
 	define('alt','Changer la langue du site en français');
 	define('frEN','english');
 	define('enFR','français');
