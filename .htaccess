@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteRule ^([a-z]{2,2})/ index.php?lang=$1
+</IfModule>
