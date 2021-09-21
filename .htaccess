@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
  RewriteEngine on
  RewriteRule ^([a-z]{2,2})/ index.php?lang=$1
- RewriteRule https://alexandreh.promo-90.codeur.online/Ad-Gloriam/ ./
+ RewriteCond https://alexandreh.promo-90.codeur.online/Ad-Gloriam/ !\.(?:css|js|jpe?g|gif|png)$ [NC]
 </IfModule>
