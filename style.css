@@ -562,6 +562,15 @@ textarea[type=text]{
     .mouse-cursor{
         display: none;
     }
+    .cardWrapper{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .cardContent{
+        height: 50%;
+    }
 }
 
 
