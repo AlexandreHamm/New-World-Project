@@ -6,4 +6,6 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /Ad-Gloriam/index.php [L]
+RewriteRule . /Ad-Gloriam/guides/characterXp.php [L]
+RewriteRule . /Ad-Gloriam/builds/characterXp.php [L]
 </IfModule>
