@@ -53,7 +53,7 @@
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="../adgloriam<?php echo linklang;?>">
+                <a href="./<?php echo linklang;?>">
                     <button class="dropbtn" aria-label="Home">
                         <img src="./src/svg/home.svg" alt="" class="nav-icon mobile">
                         <span class="desktop"><?php echo home; ?></span>
