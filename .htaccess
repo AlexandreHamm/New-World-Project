@@ -1,5 +1,4 @@
 <IfModule mod_rewrite.c>
  RewriteEngine on
  RewriteRule ^([a-z]{2,2})/ index.php?lang=$1
- RewriteCond %{REQUEST_URI} !\.(?:css|js|jpe?g|gif|png)$ [NC]
 </IfModule>
