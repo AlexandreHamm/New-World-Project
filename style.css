@@ -11,16 +11,22 @@
     font-family: "Louis George Cafe";
     src: url("./src/fonts/Louis\ George\ Cafe.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Amalfi Coast";
+    src: url("./src/fonts/Amalfi\ Coast.ttf") format("truetype");
+}
 /* VARIABLES */
 :root{
     font-size: 16px;
     --cafe: "Louis George Cafe", Arial, sans-serif;
     --dumb: "Dumbledor", Arial, sans-serif;
     --lock: "Scurlock", Arial, sans-serif;
+    --sign: "Amalfi Coast", Arial, sans-serif;
     --black: #181819;
+    --orange: #f89e6b;
 }
 /* RESET */
-*{
+*, html, body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -33,7 +39,7 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    scrollbar-color: #f89e6b var(--black);
+    scrollbar-color: var(--orange) var(--black);
 }
 button{
     cursor: pointer;
@@ -44,13 +50,11 @@ h1{
     margin: 10px 10px;
 }
 h2{
-    display: none;
     font-size: 40px;
     padding-bottom: 10px;
     margin-top: 100px;
     margin-bottom: -20px;
     text-align: center;
-    color: white;
 }
 h3{
     font-family: var(--cafe);
@@ -58,6 +62,14 @@ h3{
     text-align: center; 
     color: var(--black); 
     margin-bottom: 10px;
+}
+h5{
+    text-transform: uppercase;
+}
+h6{
+    font-family: var(--sign);
+    text-align: right;
+    font-size: 14px;
 }
 li{
     list-style-type: none;
@@ -72,7 +84,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #f89e6b;
+    background: var(--orange);
 }
 .content::-webkit-scrollbar {
     width: 0.25rem;
@@ -83,7 +95,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content::-webkit-scrollbar-thumb {
-    background: #f89e6b;
+    background: var(--orange);
+}
+.cardContent::-webkit-scrollbar{
+    width: 0.25rem;
+}
+.cardContent::-webkit-scrollbar-track{
+    background: var(--white);
+}
+.cardContent::-webkit-scrollbar-thumb{
+    background: var(--orange);
 }
 
 /* BACKGROUND */
@@ -161,11 +182,11 @@ header{
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
 }
-.dropdown:hover .dropbtn, .nav-item:hover .dropbtn {
+.dropdown:hover .dropbtn, .nav-item:hover .dropbtn{
     max-height: 50px;
-    background-color: #f89e6b;
+    background-color: var(--orange);
     color: var(--black);
-    transition: 0.5s;
+    transition: all 0.5s ease-in-out;
 }
 .dropdown-content {
     display: none;
@@ -182,6 +203,7 @@ header{
     padding-bottom: 5px;
 }
 .dropdown-content div a {
+    cursor: pointer;
     float: none;
     color: var(--black);
     padding: 12px 16px;
@@ -215,6 +237,7 @@ header{
     z-index: 998;
     top: 50%;
     right: 1rem;
+    min-width: 0;
     display: flex;
     align-items: center;
     border: none;
@@ -233,6 +256,7 @@ header{
 .flag img{
     margin-top: 2px;
     max-width: 25px;
+    max-height: 17.33px;
     border: 1px solid white;
 }
 .flag .arrow{
@@ -252,11 +276,11 @@ header{
     border: none;
     margin-top: 15px;
 }
-.fullscrnBtn img{
+.fullscrnBtn svg{
     max-width: 20px;
     transition: 0.5s;
 }
-.fullscrnBtn:hover > img{
+.fullscrnBtn:hover > svg{
     max-width: 23px;
     transition: 0.5s;
 }
@@ -273,6 +297,7 @@ header{
     position: relative;
     width: 100%;
     height: 100%;
+    min-height: 60vh;
     flex-grow: 1;
     background-color: #FFF;
     overflow-y: scroll;
@@ -280,17 +305,57 @@ header{
     transition: 0.5s;
 }
 .white{
+    width: 100%;
+    height: 100%;
     position: absolute;
     padding: 50px;
     text-align: justify;
+}
+.cardWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.card{
+    width: 20%;
+    border: 1px rgb(180, 180, 180) solid;
+    display: flex;
+    flex-direction: column;
+}
+.cardImg{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.cardImg > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cardContent{
+    padding: 5px 10px;
+    height: 80px;
+    overflow-y: scroll;
+}
+.dates{
+    margin: 2px auto;
+    font-size: 12px;
+    font-style: italic;
+    opacity: .8;
+}
+.intro{
+    font-size: 14px;
+    letter-spacing: .3px;
 }
 /* CONTACT FORM */
 .formulaire{
     width: 100%;
     padding: 50px;
     position: absolute;
-    opacity: 0;
-    pointer-events: none;
     transition: .7s;
 }
 form h3{
@@ -311,7 +376,7 @@ input, textarea{
     width: 100%;
     background-color: var(--black);
     color: white;
-    border: 2px solid #f89e6b;
+    border: 2px solid var(--orange);
     margin-bottom: 1rem;
 }
 textarea{
@@ -342,7 +407,7 @@ textarea[type=text]{
     margin-left: 50%;
     background-color: var(--black);
     color: white;
-    border: 2px solid #f89e6b;
+    border: 2px solid var(--orange);
     transform: translate(-50%);
 }
 
@@ -360,12 +425,24 @@ textarea[type=text]{
     transition: 3s;
     opacity: 0;
     padding: 10px 20px;
-    border: 3px solid #f89e6b;
+    border: 3px solid var(--orange);
     background-color: var(--black);
 }
 .hideForm{
     opacity: 0;
     pointer-events: none;
+}
+
+/* WP-ADMIN */
+
+.post-edit-link{
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #FFF;
+    background-color: var(--black);
+    border: 3px solid var(--black);
+    box-shadow: 3px 3px 10px var(--black);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -397,7 +474,7 @@ textarea[type=text]{
         max-height: 100px;
         bottom: 0;
         background-color: var(--black);
-        border-bottom: 1px solid #f89e6b;
+        border-bottom: 1px solid var(--orange);
         margin-left: -2px;
     }
     button{
@@ -409,11 +486,17 @@ textarea[type=text]{
     .nav-item{
         margin: auto 1vw;
     }
-    .dropdown-content{
+    .build{
         top: -29.165rem;
     }
     .guide{
         top: -32.5rem;
+    }
+    .flags a{
+        top: 0rem;
+        right: -.4rem;
+        padding: 10px 20px 10px 15px;
+        background-color: var(--black) !important;
     }
     h2{
         width: 100vw;
@@ -472,9 +555,6 @@ textarea[type=text]{
     }
     .white{
         padding: 30px 10px;
-    }
-    .flags{
-        display: block;
     }
     .lang{
         display: none;

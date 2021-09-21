@@ -1,21 +1,22 @@
 <?php
 
 // NAVBAR
-
-	define('logo','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=en');
-
 	define('home',"home");
 	define('guid',"guides");
 	define('build',"builds");
 	define('cntct',"contact");
+	define('linklang','?lang=en');
 
 // FLAG
+	define('idFR','fr');
+	define('idEN', 'en');
 	define('flag1','./src/svg/english.svg');
 	define('flag2','./src/svg/french.svg');
 	define('alt','Changer la langue du site en français');
-	define('link','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=fr');
 	define('frEN','english');
 	define('enFR','français');
+	define('fClass','fr');
+	define('lang','?lang=fr');
 
 // GUIDES
 	define('prog',"Progressing");
@@ -56,6 +57,8 @@
 		Officers will contact you <br>
 		as soon as possible.');
 	define('send','Send');
+	define('form','Contact form');
+	define('contact','contact');
 	// PLACEHOLDERS
 		define('chname','Character Name');
 		define('lvl','Character Level');

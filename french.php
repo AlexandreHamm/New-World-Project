@@ -1,21 +1,22 @@
 <?php
 
 // NAVBAR
-
-	define('logo','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=fr');
-
 	define('home',"accueil");
 	define('guid',"guides");
 	define('build',"builds");
 	define('cntct',"contact");
+	define('linklang','?lang=fr');
 
 // FLAG
+	define('idFR','en');
+	define('idEN', 'fr');
 	define('flag1','./src/svg/french.svg');
 	define('flag2','./src/svg/english.svg');
 	define('alt','Set website language to english');
-	define('link','https://alexandreh.promo-90.codeur.online/New-World-Project/index.php?lang=en');
 	define('frEN','français');
 	define('enFR','english');
+	define('fClass','en');
+	define('lang','?lang=en');
 
 // GUIDES
 	define('prog',"Progression");
@@ -56,6 +57,8 @@
 		Nos officiers vous contacterons <br>
 		dans les plus brefs délais.');
 	define('send','Envoyer');
+	define('form','Formulaire de contact');
+	define('contact','nous-contacter');
 	// PLACEHOLDERS
 		define('chname','Nom du personnage');
 		define('lvl','Niveau du personnage');
@@ -65,4 +68,5 @@
 // Variable Template
 
 	// define('VARIABLE',"Hachette");
-?> 
+?>
+

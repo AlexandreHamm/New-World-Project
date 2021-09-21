@@ -1,4 +1,3 @@
-let form = document.querySelector('form');
 let a,
     b,
     c;
@@ -35,11 +34,26 @@ let a,
 
 // this is the id of the form
 
-$(".formBtn").click(function(e) { 
+// alert('Webhook');
+
+$(".formBtn").click(function(e) {
 
     e.preventDefault(); // avoid to execute the actual submit of the form.
 
-    let form = $(".formcontent");
+        var ajaxLoading = false;
+    $(document).ready(function() {
+        $('#ajaxRequestor').click(function(e) {
+            e.preventDefault();
+            if(!ajaxLoading) {
+                ajaxLoading = true;
+                $('#ajaxContentPlaceholder').load('/path/to/content.html', 
+                    function() { 
+                        ajaxLoading = false;
+                    }
+                );
+            }
+        });
+    });
 
     $('form').each(function() {
         if ($('.info').val() != '') {
@@ -124,10 +138,9 @@ $(".formBtn").click(function(e) {
                       ],
                 }),
                 
-                success: function(data)
-                {
-                $(".formcontent").addClass('hideForm');
-                $(".confirmation").css('opacity','100%');
+                success: function(data){
+                    $(".formcontent").addClass('hideForm');
+                    $(".confirmation").css('opacity','100%');
                 },
                 error: function(){
                     // COMME SUCCESS, MAIS MESSAGE D'ERREUR
@@ -138,9 +151,10 @@ $(".formBtn").click(function(e) {
             alert('Veuillez renseigner tous les champs.');
             return false
         }
+
     });    
     
-    }); 
+});
 
 // $('.formBtn').on('click',function(){ 
 //     $('input').each(function() {

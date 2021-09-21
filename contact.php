@@ -34,7 +34,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
     <link rel="manifest" href="./src/favicon/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="header mobile"></div>
@@ -46,14 +46,14 @@
         <div class="dropdown">
             <button class="flag"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='./src/svg/arrow.svg' alt='' class="arrow"></button>
             <div class="dropdown-content flags">
-                <a class="flag <?php echo fClass;?>" href="./index<?php echo lang; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
+                <a class="flag <?php echo fClass;?>" href="./contact<?php echo lang; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
             </div>
         </div>
     </header>
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="../adgloriam<?php echo linklang;?>">
+                <a href="./<?php echo linklang;?>">
                     <button class="dropbtn" aria-label="Home">
                         <img src="./src/svg/home.svg" alt="" class="nav-icon mobile">
                         <span class="desktop"><?php echo home; ?></span>
@@ -98,17 +98,17 @@
                     </button>
                     <div class="dropdown-content build">
                         <div class="weapons">
-                            <a href="./builds/swordshield.php<?php echo linklang;?>" id='ss'><?php echo ss; ?></a>
-                            <a href="./builds/hatchet.php<?php echo linklang;?>" id='hatch'><?php echo hatch; ?></a>
-                            <a href="./builds/rapier.php<?php echo linklang;?>" id='rap'><?php echo rap; ?></a>
-                            <a href="./builds/lance.php<?php echo linklang;?>" id='lan'><?php echo lan; ?></a>
-                            <a href="./builds/hammer.php<?php echo linklang;?>" id='hamm'><?php echo hamm; ?></a>
-                            <a href="./builds/greataxe.php<?php echo linklang;?>" id='grtx'><?php echo grtx; ?></a>
-                            <a href="./builds/bow.php<?php echo linklang;?>" id='bow'><?php echo bow; ?></a>
-                            <a href="./builds/musket.php<?php echo linklang;?>" id='musk'><?php echo musk; ?></a>
-                            <a href="./builds/firestaff.php<?php echo linklang;?>" id='fires'><?php echo fires; ?></a>
-                            <a href="./builds/icegauntlet.php<?php echo linklang;?>" id='iceg'><?php echo iceg; ?></a>
-                            <a href="./builds/lifestaff.php<?php echo linklang;?>" id='lifes'><?php echo lifes; ?></a>
+                            <a href="./builds/swordshield<?php echo linklang;?>" id='ss'><?php echo ss; ?></a>
+                            <a href="./builds/hatchet<?php echo linklang;?>" id='hatch'><?php echo hatch; ?></a>
+                            <a href="./builds/rapier<?php echo linklang;?>" id='rap'><?php echo rap; ?></a>
+                            <a href="./builds/lance<?php echo linklang;?>" id='lan'><?php echo lan; ?></a>
+                            <a href="./builds/hammer<?php echo linklang;?>" id='hamm'><?php echo hamm; ?></a>
+                            <a href="./builds/greataxe<?php echo linklang;?>" id='grtx'><?php echo grtx; ?></a>
+                            <a href="./builds/bow<?php echo linklang;?>" id='bow'><?php echo bow; ?></a>
+                            <a href="./builds/musket<?php echo linklang;?>" id='musk'><?php echo musk; ?></a>
+                            <a href="./builds/firestaff<?php echo linklang;?>" id='fires'><?php echo fires; ?></a>
+                            <a href="./builds/icegauntlet<?php echo linklang;?>" id='iceg'><?php echo iceg; ?></a>
+                            <a href="./builds/lifestaff<?php echo linklang;?>" id='lifes'><?php echo lifes; ?></a>
                         </div>
                     </div>
                 </div>
@@ -129,124 +129,20 @@
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve"><metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata><g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M6472.3,4526.9v-483.1h878.8h881.1L6971.5,2783.1L5713.1,1524.8l349.7-352l352-349.7l1258.4,1258.4l1260.7,1260.6v-881.1v-878.8h483.1H9900v1713.9V5010H8186.2H6472.3V4526.9z"/><path d="M2324.6-1863.8L1066.2-3122.2v881.1v878.8H583.1H100v-1713.8V-4790h1713.8h1713.9v483.1v483.1h-878.8h-881.1L3017-2574.6c685.5,685.5,1246.9,1258.4,1246.9,1269.9c0,13.8-151.8,177.1-340.5,363.5l-338.2,338.2L2324.6-1863.8z"/></g></g></svg>
         </button>
         <div class="content">
-            <div class="white">
-                <h3>Latest</h3><br>
-                <div class="cardWrapper">
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardWrapper">
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" alt="">
-                        </div>
-                        <div class="cardContent">
-                            <h5>Lorem Ipsum</h5>
-                            <p class='dates'>21 Septembre 2021</p>
-                            <p class='intro'>Mais où est ta virginité, elle n'est pas sur la carte. T'es obligé de prendre un Khajiit pour jouer avec une chatte.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="cardWrapper">
-                    <div class="card">
 
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
+            <div class="formulaire">
+                <form class="formcontent">
+                    <h3><?php echo form; ?></h3>
+                    <input type="text" name="a" id="a" autocomplete='off' placeholder="<?php echo chname; ?>" class='info'><br>
+                    <input type="number" min='1' max="60" name="b" id="b" autocomplete='off' placeholder="<?php echo lvl; ?>" class='info'><br>
+                    <textarea type="text" name="c" id="c" placeholder="<?php echo reas; ?>" class='info'></textarea><br>
+                    <button class="formBtn" type="button"><?php echo send; ?></button>
+                </form>
+                <div class="confirmation">
+                    <?php echo confirm; ?>
                 </div>
-                <div class="cardWrapper">
-                    <div class="card">
-
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                    <div class="card">
-                        
-                    </div>
-                </div> -->
-                
-                <h6>k.n. aries</h6>
-                <!-- <p class='credits' style='text-align:center'>K.N. © ARIES 2021</p> -->
             </div>
+
         </div>
         
     </main>
