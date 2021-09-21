@@ -46,7 +46,7 @@
         <div class="dropdown">
             <button class="flag"><img src="<?php echo flag1; ?>" alt="<?php echo alt; ?>"><img src='./src/svg/arrow.svg' alt='' class="arrow"></button>
             <div class="dropdown-content flags">
-                <a class="flag <?php echo fClass;?>" href="./index<?php echo lang; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
+                <a class="flag <?php echo fClass;?>" href="./<?php echo lang; ?>"><img src="<?php echo flag2; ?>" alt="<?php echo alt; ?>"></a>
             </div>
         </div>
     </header>
