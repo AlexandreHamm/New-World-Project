@@ -1,12 +1,12 @@
 <?php
     if ($_GET['lang']=='fr') {
-        include('/ad-gloriam/french.php');
+        include('french.php');
     } 
     else if ($_GET['lang']=='en') {
-        include('/ad-gloriam/english.php');
+        include('english.php');
     }
     else {
-        include('/ad-gloriam/french.php');
+        include('french.php');
     }
 ?> 
 <!DOCTYPE html>
