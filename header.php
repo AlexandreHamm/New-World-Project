@@ -1,17 +1,13 @@
-<?php // EN TETE DE FICHIER
-
-    if ($_GET['lang']=='fr') {           // si la langue est 'fr' (français) on inclut le fichier fr-lang.php
-        include('french.php');
+<?php
+    if ($_GET['lang']=='fr') {
+        include('/ad-gloriam/french.php');
     } 
-    
-    else if ($_GET['lang']=='en') {      // si la langue est 'en' (anglais) on inclut le fichier en-lang.php
-        include('english.php');
+    else if ($_GET['lang']=='en') {
+        include('/ad-gloriam/english.php');
     }
-    
-    else {                       // si aucune langue n'est déclarée on inclut le fichier fr-lang.php par défaut
-        include('french.php');
+    else {
+        include('/ad-gloriam/french.php');
     }
-	 
 ?> 
 <!DOCTYPE html>
 <html lang="en">
